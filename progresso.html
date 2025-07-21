@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progresso no Curso</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard">
+  <header class="main-header">
+    <h1>Progresso Acadêmico</h1>
+    <p>Aluno: André Luis — Engenharia de Computação — 3º semestre</p>
+    <button class="toggle-theme">🌓</button>
+  </header>
+
+  <nav class="main-nav">
+    <a href="dashboard.html">Início</a>
+    <a href="disciplinas.html">Disciplinas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="index.html">Sair</a>
+  </nav>
+
+  <main id="progresso">
+    <h2>Engenharia de Computação</h2>
+
+    <div class="progress-container">
+      <p>Curso concluído: 40%</p>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 40%;"></div>
+      </div>
+    </div>
+
+    <div class="summary-cards">
+      <div class="summary-card">
+        <h3>Disciplinas Concluídas</h3>
+        <p>12</p>
+      </div>
+      <div class="summary-card">
+        <h3>Em Andamento</h3>
+        <p>5</p>
+      </div>
+      <div class="summary-card">
+        <h3>Pendentes</h3>
+        <p>18</p>
+      </div>
+    </div>
+
+    <h3>Disciplinas Pendentes</h3>
+    <ul class="pending-list">
+      <li>Inteligência Artificial</li>
+      <li>Computação Gráfica</li>
+      <li>Segurança da Informação</li>
+      <li>Redes Avançadas</li>
+      <li>Projeto Final</li>
+      <!-- Adicione outras conforme desejar -->
+    </ul>
+
+    <h3>Progresso por Área</h3>
+    <div class="area-cards">
+      <div class="area-card">
+        <strong>Disciplinas Obrigatórias</strong>
+        <p>1500 horas</p>
+      </div>
+      <div class="area-card">
+        <strong>Ciências da Computação</strong>
+        <p>400 horas</p>
+      </div>
+      <div class="area-card">
+        <strong>Automação e Controle</strong>
+        <p>300 horas</p>
+      </div>
+      <div class="area-card">
+        <strong>Telecomunicações</strong>
+        <p>350 horas</p>
+      </div>
+    </div>
+
+    <div class="motivation-box">
+      🚀 <strong>Continue assim!</strong> Você está cada vez mais perto de se tornar Engenheiro de Computação!
+    </div>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.toggle-theme');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

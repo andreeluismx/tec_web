@@ -1,0 +1,101 @@
+/* turma.css */
+
+/* Paleta */
+:root {
+--azul: #1E3A8A;
+--verde: #11827e;
+--cinza-claro: #f8fafc;
+--branco: #ffffff;
+--texto: #1e293b;
+}
+
+/* Reset */
+body {
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', sans-serif;
+background-color: var(--cinza-claro);
+color: var(--texto);
+}
+
+/* Header */
+header {
+background-color: var(--azul);
+color: white;
+padding: 16px;
+text-align: center;
+}
+
+main {
+max-width: 1200px;
+margin: 40px auto;
+background-color: var(--branco);
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1, h2 {
+color: var(--azul);
+}
+
+/* Informações de turma */
+.turma-info {
+margin-bottom: 30px;
+}
+
+.turma-info p {
+font-size: 16px;
+margin: 8px 0;
+}
+
+/* Horários e Docentes */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+th, td {
+border: 1px solid #ddd;
+padding: 12px;
+text-align: left;
+}
+
+th {
+background-color: var(--azul);
+color: white;
+}
+
+tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+
+/* Botões ou ações */
+button {
+background-color: var(--verde);
+color: white;
+border: none;
+padding: 10px 18px;
+border-radius: 6px;
+cursor: pointer;
+font-weight: bold;
+margin-top: 20px;
+transition: background 0.3s ease;
+}
+
+button:hover {
+background-color: #0e6c61;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+main {
+padding: 20px;
+}
+
+table {
+font-size: 14px;
+}
+}

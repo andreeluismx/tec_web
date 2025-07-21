@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Minhas Disciplinas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard">
+  <header class="main-header">
+    <h1>Engenharia de Computação</h1>
+    <a href="index.html" class="logout-button">Sair</a>
+  </header>
+
+  <nav class="main-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="progresso.html">Progresso</a>
+    <a href="disciplinas.html">Disciplinas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="Turma.html">Turmas</a>
+    <a href="busca_turma.html">Buscar Turmas</a>
+  </nav>
+
+  <section id="disciplinas">
+    <h2>Minhas Disciplinas</h2>
+
+    <!-- Resumo geral -->
+    <div class="summary-cards">
+      <div class="summary-card">
+        <h3>Concluídas</h3>
+        <p>18</p>
+      </div>
+      <div class="summary-card">
+        <h3>Pendentes</h3>
+        <p>10</p>
+      </div>
+      <div class="summary-card">
+        <h3>Totais</h3>
+        <p>28</p>
+      </div>
+    </div>
+
+    <!-- Tabela detalhada -->
+    <table class="discipline-table">
+      <thead>
+        <tr>
+          <th>Disciplina</th>
+          <th>Status</th>
+          <th>Semestre</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cálculo 1</td>
+          <td><span class="status ativo">Concluída</span></td>
+          <td>1º</td>
+          <td><a href="#" class="ver-detalhes" data-disciplina="Cálculo 1">Ver detalhes</a></td>
+        </tr>
+        <tr>
+          <td>Álgebra Linear</td>
+          <td><span class="status ativo">Concluída</span></td>
+          <td>1º</td>
+          <td><a href="#" class="ver-detalhes" data-disciplina="Álgebra Linear">Ver detalhes</a></td>
+        </tr>
+        <tr>
+          <td>Programação 1</td>
+          <td><span class="status ativo">Concluída</span></td>
+          <td>2º</td>
+          <td><a href="#" class="ver-detalhes" data-disciplina="Programação 1">Ver detalhes</a></td>
+        </tr>
+        <tr>
+          <td>Física 1</td>
+          <td><span class="status inativo">Pendente</span></td>
+          <td>2º</td>
+          <td><a href="#" class="ver-detalhes" data-disciplina="Física 1">Ver detalhes</a></td>
+        </tr>
+        <!-- Adicione mais disciplinas conforme necessário -->
+      </tbody>
+    </table>
+
+    <!-- Cards por categoria -->
+    <div class="area-cards">
+      <div class="area-card">
+        <strong>Obrigatórias</strong>
+        12 disciplinas
+      </div>
+      <div class="area-card">
+        <strong>Optativas da Computação</strong>
+        8 disciplinas
+      </div>
+      <div class="area-card">
+        <strong>Optativas Livres</strong>
+        3 disciplinas
+      </div>
+      <div class="area-card">
+        <strong>Horas Complementares</strong>
+        5 disciplinas
+      </div>
+    </div>
+
+    <!-- Box motivacional -->
+    <div class="motivation-box">
+      Continue avançando! Cada disciplina concluída é um passo mais perto da sua formação.
+    </div>
+  </section>
+
+  <!-- Modal de detalhes da disciplina -->
+  <div id="modal-detalhes" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3 id="modal-title">Título da Disciplina</h3>
+      <p id="modal-descricao">Descrição da disciplina selecionada.</p>
+    </div>
+  </div>
+
+  <script>
+    // Dados das disciplinas (você pode expandir com mais detalhes)
+    const disciplinaData = {
+      "Cálculo 1": {
+        descricao: "Estudo de limites, derivadas, integrais e aplicações no contexto da engenharia."
+      },
+      "Álgebra Linear": {
+        descricao: "Vetores, matrizes, espaços vetoriais, transformações lineares e aplicações."
+      },
+      "Programação 1": {
+        descricao: "Introdução à lógica de programação, algoritmos, estruturas de controle e linguagens como Python ou C."
+      },
+      "Física 1": {
+        descricao: "Conceitos fundamentais de cinemática, dinâmica, trabalho e energia para engenheiros."
+      }
+    };
+
+    // Seletores
+    const links = document.querySelectorAll('.ver-detalhes');
+    const modal = document.getElementById('modal-detalhes');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDescricao = document.getElementById('modal-descricao');
+    const closeBtn = document.querySelector('.close-button');
+
+    // Abertura do modal
+    links.forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const nome = link.getAttribute('data-disciplina');
+        modalTitle.textContent = nome;
+        modalDescricao.textContent = disciplinaData[nome]?.descricao || "Sem descrição disponível.";
+        modal.style.display = 'block';
+      });
+    });
+
+    // Fechamento do modal
+    closeBtn.addEventListener('click', () => modal.style.display = 'none');
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) modal.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

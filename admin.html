@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel Administrativo - Centralizador</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body class="admin">
+  <header class="main-header">
+    <h1>Painel Administrativo</h1>
+    <a href="index.html" class="logout-button">Sair</a>
+  </header>
+
+  <nav class="main-nav">
+    <a href="#disciplinas">Disciplinas</a>
+    <a href="#alunos">Alunos</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#avisos">Avisos</a>
+  </nav>
+
+  <main>
+    <section id="disciplinas">
+      <h2>Gerenciar Disciplinas</h2>
+      <button class="add-button">+ Adicionar Disciplina</button>
+      <table class="admin-table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Professor</th>
+            <th>Período</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Algoritmos Avançados</td>
+            <td>Prof. Carlos Silva</td>
+            <td>7º</td>
+            <td>
+              <button class="edit-button">Editar</button>
+              <button class="delete-button">Remover</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Banco de Dados</td>
+            <td>Profa. Ana Lima</td>
+            <td>5º</td>
+            <td>
+              <button class="edit-button">Editar</button>
+              <button class="delete-button">Remover</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="alunos">
+      <h2>Gerenciar Alunos</h2>
+      <p>Funcionalidade em desenvolvimento...</p>
+    </section>
+
+    <section id="eventos">
+      <h2>Gerenciar Eventos</h2>
+      <p>Funcionalidade em desenvolvimento...</p>
+    </section>
+
+    <section id="avisos">
+      <h2>Publicar Avisos</h2>
+      <form id="form-aviso">
+        <textarea id="texto-aviso" rows="4" placeholder="Escreva um aviso para os alunos..." required></textarea><br/>
+        <button type="submit" class="add-button">Publicar Aviso</button>
+      </form>
+      <ul id="lista-avisos"></ul>
+    </section>
+  </main>
+
+  <script>
+    const form = document.getElementById("form-aviso");
+    const lista = document.getElementById("lista-avisos");
+    const textarea = document.getElementById("texto-aviso");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      const texto = textarea.value.trim();
+      if (texto) {
+        const li = document.createElement("li");
+        li.textContent = texto;
+        lista.appendChild(li);
+        textarea.value = "";
+      }
+    });
+  </script>
+</body>
+</html>

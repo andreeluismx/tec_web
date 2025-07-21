@@ -1,0 +1,153 @@
+/* Paleta de cores base */
+:root {
+--azul-escuro: #1E3A8A;
+--azul-claro: #D2EDFF;
+--azul-intermedio: #B2E2FF;
+--verde: #11827e;
+--cinza-claro: #F9FAFB;
+}
+
+body, html {
+margin: 0;
+padding: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: var(--cinza-claro);
+}
+
+.main-header {
+background-color: var(--azul-escuro);
+color: white;
+padding: 20px;
+text-align: center;
+position: relative;
+}
+
+.logout-button {
+position: absolute;
+top: 20px;
+right: 20px;
+background-color: var(--verde);
+color: white;
+padding: 8px 14px;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+}
+
+.main-nav {
+display: flex;
+justify-content: center;
+gap: 20px;
+background-color: var(--azul-claro);
+padding: 10px;
+}
+
+.main-nav a {
+color: var(--azul-escuro);
+text-decoration: none;
+font-weight: 500;
+}
+
+.main-nav a:hover {
+text-decoration: underline;
+}
+
+main {
+padding: 20px;
+}
+
+h2 {
+color: var(--azul-escuro);
+margin-top: 30px;
+}
+
+.add-button {
+background-color: var(--verde);
+color: white;
+border: none;
+padding: 10px 18px;
+border-radius: 6px;
+cursor: pointer;
+font-weight: bold;
+margin-bottom: 15px;
+}
+
+.add-button:hover {
+background-color: #0e6c61;
+}
+
+.admin-table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: left;
+}
+
+.admin-table th {
+background-color: var(--azul-intermedio);
+}
+
+.edit-button,
+.delete-button {
+border: none;
+padding: 6px 12px;
+border-radius: 4px;
+cursor: pointer;
+font-weight: bold;
+margin-right: 5px;
+}
+
+.edit-button {
+background-color: var(--azul-escuro);
+color: white;
+}
+
+.edit-button:hover {
+background-color: #011827;
+}
+
+.delete-button {
+background-color: #e53935;
+color: white;
+}
+
+.delete-button:hover {
+background-color: #b71c1c;
+}
+
+/* Estilo para seção de avisos */
+#avisos {
+margin-top: 40px;
+}
+
+#form-aviso textarea {
+width: 100%;
+padding: 10px;
+font-size: 15px;
+border: 1px solid #ccc;
+border-radius: 6px;
+resize: vertical;
+margin-bottom: 10px;
+}
+
+#lista-avisos {
+list-style: none;
+padding: 0;
+margin-top: 20px;
+}
+
+#lista-avisos li {
+background: white;
+border: 1px solid #ddd;
+border-left: 5px solid var(--azul-escuro);
+padding: 12px;
+border-radius: 6px;
+margin-bottom: 10px;
+color: #011827;
+font-weight: 500;
+}

@@ -1,0 +1,73 @@
+:root {
+    --azul-escuro: #1E3A8A;
+    --azul-claro: #D2EDFF;
+    --azul-intermedio: #B2E2FF;
+    --verde: #11827e;
+    --cinza-claro: #F9FAFB;
+    --fundo-dark: #0f172a;
+    --texto-dark: #f1f5f9;
+    --cartao-dark: #1e293b;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cinza-claro);
+    padding: 40px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .container {
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  h2 {
+    color: var(--azul-escuro);
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: var(--azul-escuro);
+    font-weight: 500;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  
+  body.dark {
+    background-color: var(--fundo-dark);
+    color: var(--texto-dark);
+  }
+  
+  body.dark .container {
+    background-color: var(--cartao-dark);
+    color: var(--texto-dark);
+  }
+  
+  /* Botão Dark Mode */
+  .toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--azul-escuro);
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  

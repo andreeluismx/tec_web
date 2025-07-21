@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel Acadêmico - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dashboard">
+
+  <header class="main-header">
+    <h1>Portal Acadêmico - Engenharia de Computação</h1>
+    <p>Bem-vindo, André Luis — 3º semestre</p>
+    <button class="toggle-theme">🌓</button>
+  </header>
+
+  <nav class="main-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="progresso.html">Progresso</a>
+    <a href="disciplinas.html">Disciplinas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="Turma.html">Turmas</a>
+    <a href="busca_turma.html">Buscar Turmas</a>
+  </nav>
+
+
+  <main>
+    <!-- Seção Disciplinas Ativas -->
+    <section id="disciplinas">
+      <h2>Disciplinas Ativas</h2>
+
+      <table class="discipline-table sigaa-style">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Disciplina</th>
+            <th>Professor</th>
+            <th>Período</th>
+            <th>Horário</th>
+            <th>Status</th>
+            <th>Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>COMP0601</td>
+            <td>Engenharia de Software</td>
+            <td>Laura Costa</td>
+            <td>6º</td>
+            <td>Seg e Qua - 14:00 às 16:00</td>
+            <td><span class="status ativo">Ativa</span></td>
+            <td><a href="disciplinas.html">Ver mais</a></td>
+          </tr>
+          <tr>
+            <td>COMP0502</td>
+            <td>Cálculo Numérico</td>
+            <td>Marcos Nunes</td>
+            <td>5º</td>
+            <td>Ter e Qui - 10:00 às 12:00</td>
+            <td><span class="status ativo">Ativa</span></td>
+            <td><a href="disciplinas.html">Ver mais</a></td>
+          </tr>
+          <!-- Adicionar outras disciplinas ativas aqui -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Seção Eventos -->
+    <section id="eventos">
+      <h2>Próximos Eventos</h2>
+      <ul class="event-list">
+        <li><strong>Apresentação de TCC</strong> – 10/08/2025</li>
+        <li><strong>Feira de Tecnologia</strong> – 25/08/2025</li>
+        <li><strong>Semana Acadêmica</strong> – 12/09/2025</li>
+      </ul>
+      <button class="add-button">+ Adicionar Evento</button>
+    </section>
+
+    <!-- Seção Progresso -->
+    <section id="progresso">
+      <h2>Progresso no Curso</h2>
+      <div class="progress-container">
+        <p>Curso concluído: 40%</p>
+        <div class="progress-bar">
+          <div class="progress-fill" style="width: 40%;"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.toggle-theme');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
+
+</body>
+</html>

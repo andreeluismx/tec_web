@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Centralizador Universitário</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-body">
+
+  <!-- 🎥 Vídeo de fundo -->
+  <video autoplay muted loop id="bg-video">
+    <source src="videoufc.mp4" type="video/mp4" />
+    Seu navegador não suporta vídeos HTML5.
+  </video>
+
+  <!-- 🎵 Áudio de fundo -->
+  <audio autoplay loop>
+    <source src="Royalty Free Education Background Music No Copyright.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio em HTML5.
+  </audio>
+
+  <!-- 🔐 Formulário de Login -->
+  <div class="login-wrapper">
+    <div class="login-box">
+      <img src="brasao4_vertical.png" alt="Logo" class="logo" />
+      <h2>Bem-vindo ao Centralizador</h2>
+      <form id="loginForm">
+        <label for="usuario">Usuário</label>
+        <input type="text" id="usuario" name="usuario" placeholder="usuário do SIGAA" required />
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required />
+
+        <label for="perfil">Entrar como:</label>
+        <select id="perfil" name="perfil" required>
+          <option value="">Selecione</option>
+          <option value="aluno">Sou Aluno</option>
+          <option value="professor">Sou Professor/Coordenação</option>
+        </select>
+
+        <button type="submit">Acessar</button>
+
+        <!-- 🔐 Esqueceu a senha -->
+        <p style="text-align: right; margin-top: 10px; font-size: 13px;">
+          <a href="#" style="color: #1E3A8A; text-decoration: none;">Esqueceu a senha?</a>
+        </p>
+      </form>
+      <p class="footer-text">© 2025 Centralizador Acadêmico</p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const perfil = document.getElementById('perfil').value;
+      if (perfil === 'aluno') {
+        window.location.href = 'dashboard.html';
+      } else if (perfil === 'professor') {
+        window.location.href = 'admin.html';
+      } else {
+        alert('Por favor, selecione um perfil.');
+      }
+    });
+  </script>
+</body>
+</html>
