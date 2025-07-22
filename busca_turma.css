@@ -1,111 +1,117 @@
-
-/* Estilos específicos para a página de busca de turmas */
-
-.search-section, .result-section {
-  width: 90%;
-  max-width: 1000px;
-  margin: 30px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+:root {
+  --azul-escuro: #1E3A8A;
+  --azul-claro: #D2EDFF;
+  --azul-intermedio: #B2E2FF;
+  --verde: #11827e;
+  --cinza-claro: #F9FAFB;
+  --fundo-dark: #0f172a;
+  --texto-dark: #f1f5f9;
+  --cartao-dark: #1e293b;
 }
 
-.search-section h2, .result-section h2 {
-  margin-top: 0;
-  color: var(--azul-escuro);
-  margin-bottom: 20px;
-  font-size: 22px;
-}
-
-.search-form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: flex-end;
-}
-
-.search-form label {
-  flex: 1 1 100%;
-  font-weight: bold;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cinza-claro);
   color: #011827;
 }
 
-.search-form input,
-.search-form select {
-  flex: 1;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+header {
+  background-color: #B2E2FF;
+  color: var(--azul-escuro);
+  padding: 20px 40px;
+  text-align: center;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px var(--sombra-suave);
+  border-bottom: 2px solid var(--azul-intermedio);
 }
 
-.search-form button {
-  background-color: var(--azul-escuro);
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+input[type="text"], select {
+  padding: 10px 14px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1 1 200px;
+  background: white;
+  transition: border 0.3s;
+}
+
+input[type="text"]:focus, select:focus {
+  border-color: var(--azul-escuro);
+  outline: none;
+}
+
+button {
+  background-color: var(--verde);
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 20px;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.search-form button:hover {
-  background-color: #011827;
+button:hover {
+  background-color: #0d6966;
 }
 
-.result-section table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
+.resultado {
+  margin-top: 30px;
 }
 
-.result-section th,
-.result-section td {
-  padding: 12px;
-  border: 1px solid #ddd;
-  text-align: left;
+.turma-card {
+  background: var(--azul-claro);
+  border: 1px solid var(--azul-intermedio);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s;
 }
 
-.result-section th {
-  background-color: var(--azul-intermedio);
+.turma-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.turma-card h3 {
+  margin-top: 0;
+  color: var(--azul-escuro);
+}
+
+.turma-card p {
+  margin: 5px 0;
+  font-size: 14px;
   color: #011827;
 }
 
-.result-section td a {
-  color: var(--azul-escuro);
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.result-section td a:hover {
-  text-decoration: underline;
-}
-
-.dashboard.dark .search-section,
-.dashboard.dark .result-section {
-  background-color: var(--cartao-dark);
-  color: var(--texto-dark);
-}
-
-.dashboard.dark .search-form label {
-  color: var(--texto-dark);
-}
-
-.dashboard.dark .search-form input,
-.dashboard.dark .search-form select {
-  background-color: #1e293b;
-  color: var(--texto-dark);
-  border-color: #334155;
-}
-
-.dashboard.dark .result-section th {
-  background-color: #334155;
-  color: var(--texto-dark);
-}
-
-.dashboard.dark .result-section td {
-  background-color: var(--cartao-dark);
-  color: var(--texto-dark);
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--azul-intermedio);
+  color: #011827;
+  margin-top: 40px;
 }

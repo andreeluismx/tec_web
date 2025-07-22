@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+<html class="background" lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="dashboard.css">
+<script src="/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17530851/navmenu.jscookmenu.HtmlJSCookMenuRenderer/JSCookMenu.js" type="text/javascript"><!--
+
+//--></script>
+<script src="/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17530851/navmenu.jscookmenu.HtmlJSCookMenuRenderer/MyFacesHack.js" type="text/javascript"><!--
+
+//--></script>
+<script type="text/javascript"><!--
+var myThemeOfficeBase='/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17530851/navmenu.jscookmenu.HtmlJSCookMenuRenderer/ThemeOffice/';
+//--></script>
+<script src="/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17530851/navmenu.jscookmenu.HtmlJSCookMenuRenderer/ThemeOffice/theme.js" type="text/javascript"><!--
+
+//--></script>
+<link href="/sigaa/css/jscookmenu/ThemeOffice/theme.css" rel="stylesheet" type="text/css"/>
+<meta content="no-cache" http-equiv="Pragma"/>
+<title>Portal do Discente - SIGAA - UFC</title>
+<link class="component" href="/sigaa/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/basic_classes.xcss/DATB/eAF7sqpgb-jyGdIAFrMEaw__.jsf" rel="stylesheet" type="text/css"/><link class="component" href="/sigaa/a4j/s/3_3_3.Finalorg/richfaces/renderkit/html/css/extended_classes.xcss/DATB/eAF7sqpgb-jyGdIAFrMEaw__.jsf" media="rich-extended-skinning" rel="stylesheet" type="text/css"/><script type="text/javascript">window.RICH_FACES_EXTENDED_SKINNING_ON=true;</script><script src="/sigaa/a4j/g/3_3_3.Finalorg/richfaces/renderkit/html/scripts/skinning.js.jsf" type="text/javascript"></script><link href="/shared/img/brasao.ico" rel="shortcut icon"/>
+<script src="/shared/jsBundles/jawr_loader.js" type="text/javascript"></script>
+<script type="text/javascript">
+	JAWR.loader.style('/bundles/css/sigaa_base.css', 'all');
+	JAWR.loader.style('/css/ufrn_print.css', 'print');
+	
+	JAWR.loader.script('/bundles/js/sigaa_base.js');
+</script>
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+<link href="/sigaa/cssBundles/gzip_1256847914/bundles/css/sigaa.css" media="all" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+   	JAWR.loader.script('/javascript/jquery-1.7.1.min.js');
+   	JAWR.loader.script('/javascript/jquery/jquery.cookie.js');
+</script>
+<script type="text/javascript">
+   	var j$=jQuery.noConflict();
+</script>
+<link href="/shared/acessibilidade/bootstrap-acessibilidade.css" rel="stylesheet"/>
+<script src="/shared/acessibilidade/accessible_jscookmenu.js" type="text/javascript"></script>
+<script src="/shared/acessibilidade/ferramentas_acessibilidade.js" type="text/javascript"></script>
+<script src="/shared/acessibilidade/accessible_extjs_basic_dialog.js" type="text/javascript"></script>
+<script type="text/javascript">
+	var mensagem;
+	var initMensagem = function() {
+		mensagem = new Mensagem();
+	}
+	YAHOO.util.Event.addListener(window,'load', initMensagem);
+</script>
+<!-- Fim dos imports para abrir chamado -->
+<link href="/sigaa/css/html5/correcoes.css" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/cssBundles/gzip_530109038/css/html5/bootstrap-form.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/cssBundles/gzip_1578515502/css/html5/bootstrap-acessibilidade.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/css/html5/flexboxgrid.css" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/cssBundles/gzip_N242246130/css/html5/html5-main.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/cssBundles/gzip_121451417/css/html5/html5-lista.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/cssBundles/gzip_N1404962710/css/html5/html5-form.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/cssBundles/gzip_N1624543208/css/html5/html5-detalhes.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/cssBundles/gzip_N603275713/css/html5/html5-botoes.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="/sigaa/cssBundles/gzip_688604679/css/tags/sigaa-tags.css" media="all" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<div id="container">
+<style>
+	#menu-acessibilidade{
+		width: 0px !important;
+		height: 0px !important;
+		padding: 0 !important;
+		overflow: hidden !important;
+		clip: rect(0,0,0,0) !important;
+		white-space: nowrap !important;
+		border: 0 !important;
+	}
+	#menu-acessibilidade a{
+		background-color: #fff;
+		border-radius: 0 2px 2px 0;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,.16),0 0 0 1px rgba(0,0,0,.08);
+		display: flex;
+		z-index: 1001;
+		border: 2px solid rgba(0,0,0,.16);
+		cursor: pointer;
+		font-size: 13px;
+		line-height: 20px;
+		margin: 6px 11px;
+		min-height: 32px;
+		text-decoration: underline;
+		text-align: center;
+		width: 128px;
+		white-space: normal;
+	}
+	#menu-acessibilidade a:focus{
+		position: fixed;
+		top: 0;
+		left: 0;
+		clip: auto;
+		overflow: visible;
+	}
+</style>
+
+<nav class="main-nav">
+    <a href="dashboard.html">Dashboard</a>
+    <a href="progresso.html">Progresso</a>
+    <a href="disciplinas.html">Disciplinas</a>
+    <a href="eventos.html">Eventos</a>
+    <a href="Turma.html">Turmas</a>
+    <a href="busca_turma.html">Buscar Turmas</a>
+  </nav>
+
+<div id="menu-acessibilidade">
+<h2 id="titulo-menu-acessibilidade">Atalhos de Acessibilidade</h2>
+<a accesskey="1" aria-hidden="true" class="link-acessibilidade" href="#menu-dropdown" id="link-skipto-menu" tabindex="-1">Pular para Menu de Navegação </a>
+<a accesskey="2" class="link-acessibilidade" href="#conteudo" id="link-skipto-conteudo">Pular para Início do Conteúdo</a>
+<a accesskey="3" class="link-acessibilidade" href="#rodape" id="link-skipto-rodape">Pular para Rodapé</a>
+<script>
+		j$(function(){
+			let menu=document.getElementById('menu-dropdown');
+			if(menu){
+				j$('#link-skipto-menu').attr('aria-hidden','false').attr('tabindex','0');
+			}
+		});
+	</script>
+</div>
+<header id="cabecalho" role="banner">
+<div id="info-sistema">
+<span role="paragraph">
+<h1 role="none">
+				UFC - SIGAA
+			</h1>
+<h3 role="none">Sistema Integrado de Gestão de Atividades Acadêmicas</h3>
+</span>
+<div id="tempoSessao" role="paragraph"></div>
+<span class="sair-sistema"> <a href="/sigaa/logar.do?dispatch=logOff"><span aria-hidden="true">SAIR</span> <span class="sr-only">encerrar sessão</span></a> </span>
+</div>
+<div id="info-usuario">
+<h2 class="sr-only">Informações do usuário</h2>
+<!-- [RM #8268] Alterar a camada de apresentacao dos elementos que exibem os dados do usuario logado -->
+<div class="nome_vinculo_deslogar_unidade_periodo">
+<div class="nome_vinculo_deslogar_periodo">
+<!-- O codigo abaixo eh responsavel por exibir o nome do usuario
+				e as opcoes de "Alterar Vinculo" e "Deslogar"(opcao Logar Como)  -->
+<div class="nome_vinculo_deslogar">
+<div class="nome_usuario">
+<p> LUIZ PAULO LOPES DE FRANCA</p>
+</div>
+<div class="vinculo_deslogar">
+</div>
+</div>
+<!-- Exibe a informacao do periodo letivo -->
+<div class="periodo">
+<p> Semestre atual: <span class="negrito">2025.1</span></p>
+</div>
+</div>
+<!-- Exibe as informacoes da unidade do usuario -->
+<div class="info_unidade">
+<p>
+				
+			         
+			         
+			            CAMPUS DA UFC EM SOBRAL/DIRETORIA
+			            
+							(11.00.01.28)
+						 
+							
+						
+			         
+      			
+				
+			</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<script>
+				j$(function(){
+					let main=j$('main,[role="main"]').not('#conteudo,[role="none"]').first();
+					if(main.length){
+						j$('#conteudo').attr('role','none');
+						if(!main.attr('id')) main.attr('id','conteudoPrincipal');
+						let id_conteudo=main.attr('id');
+						j$('#link-skipto-conteudo').attr('href','#'+id_conteudo);
+					}
+					else{
+						let menu=j$('#menu-dropdown');
+						if(menu.length){
+							main = menu.next();
+							if(!main.attr('id')) main.attr('id','conteudoPrincipal');
+							let id_conteudo=main.attr('id');
+							j$('#link-skipto-conteudo').attr('href','#'+id_conteudo);
+						}
+					}
+				})
+			</script>
+<main id="conteudo">
+<script type="text/javascript">
+		j$(document).ready(function(){
+			j$.cookie('sistema', null);
+		});
+	
+		function setarCookie(){
+			j$.cookie('sistema', null);
+			j$.cookie('sistema', 'sigaa', { path: '/' });
+		}
+
+		function abrirDivDetalhes(div, width, height) {
+			dialog = YAHOO.ext.DialogManager.get(div);
+			$(div).style.display='block';
+			$(div).style.backgroundColor = '#FFFFFF';
+			if(!width) width = 600;
+			if(!height) height = 400;
+			if ( !dialog ) {
+				dialog = new YAHOO.ext.BasicDialog(div, {
+				        modal: false,
+				        width: width,
+				        height: height,
+				        constraintoviewport: false,
+				        fixedcenter: true,
+				        shadow: false,
+				        minWidth:600,
+				        minHeight:0,
+				        proxyDrag: true
+				});
+				dialog.addKeyListener(27, dialog.hide, dialog);
+				dialog.addButton('Fechar Painel', dialog.hide, dialog);
+			}
+			dialog.show();
+			YAHOO.ext.DialogManager.bringToFront(div);
+		}
+
+
+		function desabilitar_link(event) {
+			tornar_link_desabilitado(event.element());
+		}
+
+		function tornar_link_desabilitado(elemento) {
+			console.log(elemento)
+			elemento.setAttribute('onclick', 'return false;');
+			elemento.classList.add("disabled")
+		}
+		function desabilitar_elemento_pai(event) {
+			tornar_link_desabilitado(event.element().parentElement);
+		}
+		
+	</script>
+<link href="/sigaa/cssBundles/gzip_1059972582/css/portal_docente.css" media="all" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+	JAWR.loader.script('/javascript/paineis/noticias.js');
+	acessibilidade_set_inicio_conteudo('portal-docente')
+	// acessibilidade_set_titulo_pagina("Portal do Discente","P&#225;gina Portal do Discente");
+</script>
+<style>
+#cboxLoadedContent iframe {
+	background-color: #FFFFFF;
+}
+</style>
+<link href="/sigaa/primefaces_resource/1.1/skins/sam/skin.css" rel="stylesheet" type="text/css"/><script src="/sigaa/primefaces_resource/1.1/yui/utilities/utilities.js" type="text/javascript"></script>
+<link href="/sigaa/primefaces_resource/1.1/jquery/plugins/lightbox/assets/skins/dark/colorbox.css" rel="stylesheet" type="text/css"/>
+<script src="/sigaa/primefaces_resource/1.1/jquery/jquery.js" type="text/javascript"></script>
+<script src="/sigaa/primefaces_resource/1.1/jquery/plugins/lightbox/colorbox.js" type="text/javascript"></script>
+<script src="/sigaa/primefaces_resource/1.1/primefaces/core/core.js" type="text/javascript"></script>
+<script type="text/javascript">
+	let title_menu_sr = acessibilidade_decode('Navega&#231;&#227;o Discente')
+</script>
+<h2 class="sr-only" id="menu-dropdown-header">Menu de Navegação do
+	Discente</h2>
+<nav aria-labelledby="menu-dropdown-header" id="menu-dropdown">
+<div class="wrapper">
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="menu:form_menu_discente" method="post" name="menu:form_menu_discente">
+<input name="menu:form_menu_discente" type="hidden" value="menu:form_menu_discente"/>
+<input name="id" type="hidden" value="492650"/>
+<input name="jscook_action" type="hidden"/>
+<script type="text/javascript">var menu_form_menu_discente_j_id_jsp_440181972_4_menu =
+[['<img src="/sigaa/img/icones/ensino_menu.gif"/>', 'Ensino', null, 'menu:form_menu_discente', null,['<img src="/sigaa/img/home.gif"/>', 'Portal da Avalia&#231;&#227;o Institucional', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{ menu.redirecionar };/verPortalAvaliacao.do', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Documentos e Declara&#231;&#245;es', null, 'menu:form_menu_discente', null,['<img src="/sigaa/img/celular_icone.gif"/>', 'Atestado de Matr&#237;cula', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ portalDiscente.atestadoMatricula }', 'menu:form_menu_discente', null],
+[null, 'Hist&#243;rico Escolar', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ portalDiscente.historico }', 'menu:form_menu_discente', null],
+['<img src="/sigaa/img/graduacao/coordenador/documento.png"/>', 'Declara&#231;&#227;o de V&#237;nculo', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ declaracaoVinculo.iniciarEmissaoDeclaracao }', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Consultas do Discente', null, 'menu:form_menu_discente', null,[null, 'Progresso no Curso', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{consultaProgressoDiscenteCurso.iniciarConsultaProgresso}', 'menu:form_menu_discente', null],
+[null, 'Pend&#234;ncias de Conclus&#227;o', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{consultaPendencias.iniciarConsultaPendencias}', 'menu:form_menu_discente', null],
+[null, 'Situa&#231;&#227;o na Biblioteca', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{consultaSituacaoDiscenteBiblioteca.iniciarConsultaSituacao}', 'menu:form_menu_discente', null],
+[null, 'Plano de Estudo', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{planoEstudoPortalDiscenteMBean.iniciarVizualizacaoMovimentacoesPortalDiscente}', 'menu:form_menu_discente', null],
+[null, 'Participa&#231;&#245;es no ENADE', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{participacaoDiscenteEnade.iniciarVizualizacaoParticipacoes}', 'menu:form_menu_discente', null],
+[null, 'Hist&#243;rico  de IRA', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{consultaIRADiscente.iniciarConsultaHistoricoIRA}', 'menu:form_menu_discente', null],
+[null, 'Hist&#243;rico de Bloqueios', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{marcacaoBloqueioDiscenteGraduacaoMBean.iniciarBuscaBloqueiosUsuarioDiscente}', 'menu:form_menu_discente', null],
+[null, 'Hist&#243;rico de Movimenta&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{movimentacaoAluno.iniciarVizualizacaoMovimentacoesPortalDiscente}', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Atividades Complementares e Extens&#227;o ', null, 'menu:form_menu_discente', null,[null, 'Solicita&#231;&#227;o de Credita&#231;&#227;o de Horas (NOVO)', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{solicitacaoCreditacao.iniciarCadastroSolicitacaoCreditacao}', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Matr&#237;cula On-Line', null, 'menu:form_menu_discente', null,,
+[null, 'Comprovante de Solicita&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ matriculaGraduacaoOnline.verComprovanteSolicitacoes}', 'menu:form_menu_discente', null],
+[null, 'Acompanhar Solicita&#231;&#245;es de Matr&#237;cula', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ matriculaGraduacao.acompanharSolicitacoes}', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Agenda de Turmas', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{agendaTurmaDiscenteMBean.visualizarAgendaTurmas}', 'menu:form_menu_discente', null]],
+[null, 'Trancamento de Componente Curricular', null, 'menu:form_menu_discente', null,[null, 'Trancar', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ trancamentoMatricula.popularSolicitacao }', 'menu:form_menu_discente', null],
+[null, 'Exibir Andamento do Trancamento', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ trancamentoMatricula.iniciarMeusTrancamentos }', 'menu:form_menu_discente', null]],
+[null, 'Supress&#227;o de Matr&#237;cula', null, 'menu:form_menu_discente', null,[null, 'Solicitar Supress&#227;o', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ supressaoMatricula.popularSolicitacao }', 'menu:form_menu_discente', null],
+[null, 'Exibir Andamento da Solicita&#231;&#227;o', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ supressaoMatricula.iniciarMinhasSupressoes }', 'menu:form_menu_discente', null]],
+_cmSplit,[null, 'Mobilidade Estudantil', null, 'menu:form_menu_discente', null,[null, 'Minhas Mobilidades', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ mobilidadeEstudantil.listarMobilidadesDiscente }', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Solicita&#231;&#227;o de Mobilidade Estudantil', null, 'menu:form_menu_discente', null,[null, 'Minhas Solicita&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ solicitacaoMobilidadeEstudantilPerfilDiscente.listarMinhasSolicitacoes }', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Solicitar Nova Mobilidade', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ solicitacaoMobilidadeEstudantilPerfilDiscente.iniciarInscricaoEditalMobilidade }', 'menu:form_menu_discente', null],
+[null, 'Solicitar Prorroga&#231;&#227;o de Mobilidade', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ solicitacaoMobilidadeEstudantilPerfilDiscente.iniciarSolicitacaoProrrogacaoMobilidade }', 'menu:form_menu_discente', null]]],
+_cmSplit,['<img src="/sigaa/img/buscar.gif"/>', 'Consultas', null, 'menu:form_menu_discente', null,[null, 'Relat&#243;rio de Turmas', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ relatorioTurma.iniciarRelatorioTurmas }', 'menu:form_menu_discente', null],
+[null, 'Turmas', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{buscaTurmaBean.popularBuscaGeral}', 'menu:form_menu_discente', null],
+[null, 'Componentes Curriculares', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ componenteCurricular.popularBuscaGeral }', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Cursos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{menu.redirecionar};/graduacao/curso/lista.jsf', 'menu:form_menu_discente', null],
+[null, 'Matrizes Curriculares', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{menu.redirecionar};/graduacao/matriz_curricular/lista.jsf?aba=consultas', 'menu:form_menu_discente', null],
+[null, 'Estruturas Curriculares', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{menu.redirecionar};/graduacao/curriculo/lista.jsf?aba=consultas', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Habilita&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{menu.redirecionar};/graduacao/habilitacao/lista.jsf?aba=consultas', 'menu:form_menu_discente', null],
+[null, '&#202;nfases (Antiga)', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{menu.redirecionar};/graduacao/enfase_antiga/lista.jsf?aba=consultas', 'menu:form_menu_discente', null],
+_cmSplit,[null, '&#202;nfases', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{menu.redirecionar};/graduacao/enfase/lista.jsf?aba=consultas', 'menu:form_menu_discente', null],
+[null, 'Curr&#237;culos de &#202;nfase', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{menu.redirecionar};/graduacao/enfase/curriculo/curriculos.jsf?aba=consultas', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Unidades Acad&#234;micas', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ unidade.popularBuscaGeral }', 'menu:form_menu_discente', null],
+[null, 'Calend&#225;rios Acad&#234;micos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{calendario.iniciarBusca}', 'menu:form_menu_discente', null]],
+_cmSplit,['<img src="/sigaa/img/menu/outros.png"/>', 'Matr&#237;cula Institucional', null, 'menu:form_menu_discente', null,[null, 'Matr&#237;cula Institucional', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ matriculaInstitucional.iniciarMatriculaInstitucionalDiscente }', 'menu:form_menu_discente', null],
+[null, 'Cancelar Matr&#237;cula Institucional', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ matriculaInstitucional.iniciarCancelamentoMatriculaInstitucionalDiscente }', 'menu:form_menu_discente', null]]],
+['<img src="/sigaa/img/icones/extensao_menu.gif"/>', 'Extens&#227;o', null, 'menu:form_menu_discente', null,[null, 'Minhas A&#231;&#245;es como Membro da Equipe', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{documentosAutenticadosExtensao.participacoesDiscenteUsuarioLogado}', 'menu:form_menu_discente', null],
+[null, 'Consultar Membros em A&#231;&#245;es de Extens&#227;o', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{consultaParticipacaoAtividadeExtensaoMBean.iniciarConsultaMembros}', 'menu:form_menu_discente', null],
+[null, 'Consultar A&#231;&#245;es de Extens&#227;o', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{atividadeExtensao.preLocalizar}', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/bolsas.png"/>', 'Aux&#237;lios e Bolsas', null, 'menu:form_menu_discente', null,[null, 'Cadastro Socioecon&#244;mico', null, 'menu:form_menu_discente', null,[null, 'Consultar Documentos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ consultarDocumentosBasicosMBean.iniciar }', 'menu:form_menu_discente', null]],
+[null, 'Processo Seletivo de Aux&#237;lios e Bolsas', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ interessadoAuxilio.listarAnuncios }', 'menu:form_menu_discente', null],
+[null, 'Acompanhar Meus Processos Seletivos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{interessadoAuxilio.acompanharInscricoes}', 'menu:form_menu_discente', null],
+[null, 'Sele&#231;&#227;o em Projetos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{aceiteIndicacaoBolsa.iniciarListaIndicacoesDiscente}', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/icones/amb_virt.png"/>', 'Ambientes Virtuais', null, 'menu:form_menu_discente', null,[null, 'Comunidades Virtuais', null, 'menu:form_menu_discente', null,[null, 'Buscar Comunidades Virtuais', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:L]#{ buscarComunidadeVirtualMBean.criar };0', 'menu:form_menu_discente', null],
+[null, 'Minhas Comunidades', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ buscarComunidadeVirtualMBean.exibirTodasComunidadesDocente }', 'menu:form_menu_discente', null]]],
+['<img src="/sigaa/img/coordenador.png"/>', 'Est&#225;gios', null, 'menu:form_menu_discente', null,[null, 'Termo de Est&#225;gio', null, 'menu:form_menu_discente', null,[null, 'Cadastrar Termo de Est&#225;gio Obrigat&#243;rio', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ termoEstagioMBean.iniciarCadastroEstagioObrigatorio }', 'menu:form_menu_discente', null],
+[null, 'Cadastrar Termo de Est&#225;gio N&#227;o Obrigat&#243;rio', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ termoEstagioMBean.iniciarCadastroEstagioNaoObrigatorio }', 'menu:form_menu_discente', null],
+[null, 'Cadastrar Termo de Est&#225;gio N&#227;o Obrigat&#243;rio na UFC', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ termoEstagioMBean.iniciarCadastroEstagioNaoObrigatorioUFC }', 'menu:form_menu_discente', null],
+[null, 'Meus Termos de Est&#225;gio', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ termoEstagioMBean.iniciarConsulta }', 'menu:form_menu_discente', null]],
+[null, 'Relat&#243;rio de Atividades de Est&#225;gio', null, 'menu:form_menu_discente', null,[null, 'Cadastrar Relat&#243;rio de Atividades de Est&#225;gio', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ relatorioAtividadesMBean.buscaTermoCadastro }', 'menu:form_menu_discente', null],
+[null, 'Consultar Meus Relat&#243;rios de Atividades de Est&#225;gio', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ relatorioAtividadesMBean.iniciarConsulta }', 'menu:form_menu_discente', null]],
+[null, 'Termo Aditivo de Est&#225;gio', null, 'menu:form_menu_discente', null,[null, 'Cadastrar Termo Aditivo de Est&#225;gio', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ termoEstagioMBean.iniciarConsulta }', 'menu:form_menu_discente', null],
+[null, 'Termos de Est&#225;gio com Aditivos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ aditivoTermoEstagioMBean.initConsultaAditivos }', 'menu:form_menu_discente', null]],
+[null, 'Rescis&#227;o de Est&#225;gio', null, 'menu:form_menu_discente', null,[null, 'Cadastrar Rescis&#227;o de Est&#225;gio', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ rescisaoTermoEstagioMBean.buscaTermoCadastro}', 'menu:form_menu_discente', null],
+[null, 'Consultar Minhas Rescis&#245;es de Est&#225;gio', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ rescisaoTermoEstagioMBean.initBuscaRescisaoTermoEstagio }', 'menu:form_menu_discente', null]],
+[null, 'Portal de Vagas', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{vagaEstagioMBean.initPainelVagas}', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/icones/agendamento.png"/>', 'Agendamentos', null, 'menu:form_menu_discente', null,[null, 'Agendar Atendimento', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ agendamento.agendar }', 'menu:form_menu_discente', null],
+[null, 'Meus Agendamentos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ agendamento.consultar }', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/icones/agendamento.png"/>', 'Restaurante Universit&#225;rio', null, 'menu:form_menu_discente', null,[null, 'Agendar Refei&#231;&#227;o', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ rUAgendamentoMBean.iniciar }', 'menu:form_menu_discente', null]],
+['<img src="/sigaa/img/menu/internacional.png"/>', 'Internacional', null, 'menu:form_menu_discente', null,[null, 'Conv&#234;nios', null, 'menu:form_menu_discente', null,[null, 'Meus Conv&#234;nios', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{solicitacaoConvenioInstitucional.listarMeusConvenios}', 'menu:form_menu_discente', null],
+_cmSplit,[null, 'Listar Todos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{solicitacaoConvenioInstitucional.listar}', 'menu:form_menu_discente', null]],
+[null, 'Tradu&#231;&#245;es', null, 'menu:form_menu_discente', null,[null, 'Minhas Tradu&#231;&#245;es', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{solicitacaoDocumentoTraducao.listarMinhasTraducoes}', 'menu:form_menu_discente', null],
+[null, 'Solicitar', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{solicitacaoDocumentoTraducao.iniciarCadastroSolicitacao}', 'menu:form_menu_discente', null]],
+[null, 'Documentos Traduzidos', null, 'menu:form_menu_discente', null,[null, 'Hist&#243;rico Escolar', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{emissaoDocumentoTraduzidoDiscente.iniciarEmissaoHistoricoDiscente}', 'menu:form_menu_discente', null],
+[null, 'Declara&#231;&#227;o de V&#237;nculo', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{emissaoDocumentoTraduzidoDiscente.iniciarEmissaoDeclaracaoVinculoDiscente}', 'menu:form_menu_discente', null]]],
+['<img src="/sigaa/img/menu/outros.png"/>', 'Outros', null, 'menu:form_menu_discente', null,[null, 'F&#243;rum de Cursos', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ forum.listarForunsCurso }', 'menu:form_menu_discente', null],
+[null, 'Email Institucional', null, 'menu:form_menu_discente', null,[null, 'Formul&#225;rio de Recadastramento', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{recadastramentoEmailMBean.entrarFormulario}', 'menu:form_menu_discente', null]],
+[null, 'Produ&#231;&#245;es Intelectuais', null, 'menu:form_menu_discente', null,[null, 'Acervo dos Docentes', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{acervoProducao.verAcervoDigital}', 'menu:form_menu_discente', null],
+[null, 'Consultar Defesas de P&#243;s-gradua&#231;&#227;o', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{consultarDefesaMBean.iniciar}', 'menu:form_menu_discente', null]],
+[null, 'Atendimento ao Aluno', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{ atendimentoAluno.novaPergunta }', 'menu:form_menu_discente', null],
+[null, 'Exame COVID', null, 'menu:form_menu_discente', null,[null, 'Resultado do Exame', 'menu_form_menu_discente_j_id_jsp_440181972_4_menu:A]#{resultadoExameCovidSigaaMBean.entrarVisualizacaoDiscenteResultado}', 'menu:form_menu_discente', null]]]];</script><div id="menu_form_menu_discente_j_id_jsp_440181972_4_menu"></div>
+<script type="text/javascript">	if(window.cmDraw!=undefined) { cmDraw ('menu_form_menu_discente_j_id_jsp_440181972_4_menu', menu_form_menu_discente_j_id_jsp_440181972_4_menu, 'hbr', cmThemeOffice, 'ThemeOffice');}</script><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form>
+</div>
+</nav>
+<div id="portal-docente">
+<h2 class="sr-only" id="perfil-discente-titulo">Perfil do Discente</h2>
+<div aria-labelledby="perfil-discente-titulo" id="perfil-docente" role="complementary">
+<div class="pessoal-docente">
+<div class="foto">
+<img alt="Foto de perfil" src="/sigaa/verFoto?idArquivo=3155134&amp;key=9cb72c6dd81a8c71dcbc838e89a4f98c" style="width: 100px; height: 125px"/>
+</div>
+<ul>
+<li><a class="perfil" href="perfil.jsf"> Atualizar Foto e
+							Perfil </a></li>
+<li>
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="j_id_jsp_440181972_143" method="post" name="j_id_jsp_440181972_143">
+<input name="j_id_jsp_440181972_143" type="hidden" value="j_id_jsp_440181972_143"/>
+<script language="Javascript" type="text/javascript">function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {f.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var ps = pvp.split(',');for (var i = 0,ii = 0;i < ps.length;i++,ii++) {var p = document.createElement("input");p.type = "hidden";p.name = ps[i];p.value = ps[i + 1];f.appendChild(p);adp[ii] = p;i += 1;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};</script>
+<a href="#" id="j_id_jsp_440181972_143:meusDadosPessoais" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['j_id_jsp_440181972_143'],'j_id_jsp_440181972_143:meusDadosPessoais,j_id_jsp_440181972_143:meusDadosPessoais','');}return false">Meus Dados Pessoais</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form></li>
+</ul>
+<div class="clear"></div>
+</div>
+<p class="info-docente">
+<span class="nome"> <small><b>LUIZ PAULO LOPES DE FRANCA</b></small>
+</span>
+
+				
+					CyberSec Student
+				
+			</p>
+<br/>
+<p style="text-align: center; font-size: x-small">
+<a href="http://www.ufc.br/alunos-2/calendario-universitario-alunos" target="_blank"> Calendário Universitário </a>
+</p>
+<div id="agenda-docente">
+<h4>Dados Institucionais</h4>
+<table>
+<tr>
+<td>Matrícula:</td>
+<td>554044</td>
+</tr>
+<tr>
+<td>Curso:</td>
+<td>ENGENHARIA DE COMPUTAÇÃO -
+								MT</td>
+</tr>
+<tr>
+<td>Nível:</td>
+<td>GRADUAÇÃO</td>
+</tr>
+<tr>
+<td>Status:</td>
+<td>ATIVO</td>
+</tr>
+<tr>
+<td>E-Mail:</td>
+<td>paulolopez92@outloo...</td>
+</tr>
+<tr>
+<td>Entrada:</td>
+<td>
+							2023.2</td>
+</tr>
+<tr>
+<td colspan="2">
+<br/>
+<i><center>Integralizações:</center></i>
+<br/>
+<table>
+<tr>
+<td>CH. Total Exigida do Curriculo</td>
+<td align="right">
+											3648</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<!--
+	Essa tag d&#225; acesso ao chat do sigaa. Disponibiliza dois links:
+	um para acesso atrav&#233;s dos recursos de acessibilidade e outro sem esses recursos. 
+ -->
+<div style="background-color: #FFFFFF; padding-top: 10px ;">
+<a href="https://linkbio.co/mbsibiufc" onsubmit="return false;" target="_blank">
+<img alt="Banner da biblioteca virtual da ufc, com o texto 'MinhaBiblioteca.com.br'" id="banner-biblioteca-digital" src="/sigaa/img/banner-minha-biblioteca.png" style="width:100%; background-color: white; border-radius: 10px;"/>
+</a>
+</div>
+</div>
+<h1 class="sr-only" id="titulo-main">Portal do Discente</h1>
+<div aria-labelledby="titulo-main" id="main-docente" role="main">
+<script type="text/javascript">
+			var fcontent=new Array()
+			
+			fcontent[0]="<p class=\"noticia destaque\"><a href=\"#\" id=\"noticia_10970658\">Ag&ecirc;ncia de Est&aacute;gios da PREX</a></p><p class=\"descricao\"><a href=\"#\" style=\"font-weight: normal; text-decoration: none\" id=\"noticia_10970658\">     Prezados Alunos e Alunas,Informamos que, em regra, os termos de compromisso de est&aacute;gio devem ser entregues &agrave; Ag&ecirc;ncia de Est&aacute;gios antes da data prevista para o in&iacute;cio das atividades, sendo admitidos, excepcionalmente, termos com at&eacute; 1 m&ecirc;s, no m&aacute;ximo, entre a data de in&iacute;cio de atividades e a sua ...</a></p>";
+			
+			fcontent[1]="<p class=\"noticia destaque\"><a href=\"#\" id=\"noticia_23954998\">&amp;#128680; Assembleia Geral para estudantes PcD da UFC Sobral</a></p><p class=\"descricao\"><a href=\"#\" style=\"font-weight: normal; text-decoration: none\" id=\"noticia_23954998\">Queremos entender como tem sido viver, circular e estudar como estudante PcD na realidade do nosso campus.    Este &eacute; um espa&ccedil;o para compartilhar viv&ecirc;ncias, levantar pautas e pensar, juntos, caminhos poss&iacute;veis.    Se voc&ecirc; &eacute; estudante PcD, sua presen&ccedil;a &eacute; essencial para que possamos construir esse mome...</a></p>";
+			
+			fcontent[2]="<p class=\"noticia destaque\"><a href=\"#\" id=\"noticia_23858893\">Declara&ccedil;&atilde;o oficial de final do semestre em agosto</a></p><p class=\"descricao\"><a href=\"#\" style=\"font-weight: normal; text-decoration: none\" id=\"noticia_23858893\">Prezados(as),  Considerando que o calend&aacute;rio acad&ecirc;mico indica que teremos aula regular em julho, encaminhamos declara&ccedil;&atilde;o que poder&aacute; servir de documento oficial para o pleito da continuidade da vinda do transporte de universit&aacute;rio das cidades circunvizinhas neste m&ecirc;s.   Ressaltamos que a UFC n&atilde;o tem ...</a></p>";
+			
+			</script>
+<h2 class="sr-only" id="noticias-portal-titulo">Notícias Relevantes</h2>
+<div aria-labelledby="noticias-portal-titulo" id="noticias-portal" role="region">
+<script>
+									
+					var portal = "ea5d1f112744a7983f19e75390eb3b46";
+					var sistema = "/sigaa";
+				</script>
+<script src="/shared/javascript/scroller-portal.js" type="text/javascript"></script>
+</div>
+<h2 class="sr-only" id="turmas-semestre-titulo">Turmas do Semestre</h2>
+<div aria-labelledby="turmas-semestre-titulo" class="simple-panel" id="turmas-portal" role="region">
+<h4 aria-hidden="true">Turmas do Semestre</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left" width="60%">Componente
+									Curricular</th>
+<th style="text-align: center" width="10%">Código</th>
+<th style="text-align: left">Local</th>
+<th colspan="2" width="20%">Horário</th>
+<!-- <th></th> -->
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td class="descricao">
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtual" method="post" name="form_acessarTurmaVirtual">
+<input name="form_acessarTurmaVirtual" type="hidden" value="form_acessarTurmaVirtual"/>
+<input name="idTurma" type="hidden" value="499003"/>
+<a href="#" id="form_acessarTurmaVirtual:turmaVirtual" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['form_acessarTurmaVirtual'],'form_acessarTurmaVirtual:turmaVirtual,form_acessarTurmaVirtual:turmaVirtual','');}return false">SBL0073 - FÍSICA EXPERIMENTAL II</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form></td>
+<td style="text-align: center">01</td>
+<td class="info" style="text-align: left">Lab. de Física Experimental - Bloco I (Mucambinho)</td>
+<td class="info"><center>SEG 08:00-10:00<br>(31/03/2025 - 01/08/2025)
+											
+										</br></center></td>
+<td>
+<!--
+-->
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="formTurma1" method="post" name="formTurma1">
+<input name="formTurma1" type="hidden" value="formTurma1"/>
+<div id="formTurma1:j_id_jsp_440181972_165"><a href="/sigaa/ensino/turma/view_calendario.jsf?idTurma=499003"><img alt="Botão para abrir horário completo da turma em uma janela modal." src="/sigaa/img/view_calendario.png" title="Ver Horário Completo da Turma"/></a></div><script type="text/javascript">var lightBoxTarget = PrimeFaces.escapeClientId('formTurma1:j_id_jsp_440181972_165') + ' a';
+widget_formTurma1_j_id_jsp_440181972_165 = jQuery(lightBoxTarget).colorbox({transition:'elastic',speed:150,width:'700',height:'645',iframe:true,opacity:0.25,rel:'formTurma1:j_id_jsp_440181972_165'});</script><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form>
+</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_499003" style="display: none;"></td>
+</tr>
+<tr class="">
+<td class="descricao">
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_1" method="post" name="form_acessarTurmaVirtualj_id_1">
+<input name="form_acessarTurmaVirtualj_id_1" type="hidden" value="form_acessarTurmaVirtualj_id_1"/>
+<input name="idTurma" type="hidden" value="499009"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_1:turmaVirtualj_id_1" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['form_acessarTurmaVirtualj_id_1'],'form_acessarTurmaVirtualj_id_1:turmaVirtualj_id_1,form_acessarTurmaVirtualj_id_1:turmaVirtualj_id_1','');}return false">SBL0067 - FÍSICA GERAL III</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form></td>
+<td style="text-align: center">01</td>
+<td class="info" style="text-align: left">Sala 09 - Bloco I (Mucambinho)</td>
+<td class="info"><center>SEG 13:30-15:30<br>QUA 13:30-15:30<br>(31/03/2025 - 01/08/2025)
+											
+										</br></br></center></td>
+<td>
+<!--
+-->
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="formTurma1j_id_1" method="post" name="formTurma1j_id_1">
+<input name="formTurma1j_id_1" type="hidden" value="formTurma1j_id_1"/>
+<div id="formTurma1j_id_1:j_id_jsp_440181972_165j_id_1"><a href="/sigaa/ensino/turma/view_calendario.jsf?idTurma=499009"><img alt="Botão para abrir horário completo da turma em uma janela modal." src="/sigaa/img/view_calendario.png" title="Ver Horário Completo da Turma"/></a></div><script type="text/javascript">var lightBoxTarget = PrimeFaces.escapeClientId('formTurma1j_id_1:j_id_jsp_440181972_165j_id_1') + ' a';
+widget_formTurma1j_id_1_j_id_jsp_440181972_165j_id_1 = jQuery(lightBoxTarget).colorbox({transition:'elastic',speed:150,width:'700',height:'645',iframe:true,opacity:0.25,rel:'formTurma1j_id_1:j_id_jsp_440181972_165j_id_1'});</script><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form>
+</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_499009" style="display: none;"></td>
+</tr>
+<tr class="odd">
+<td class="descricao">
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_2" method="post" name="form_acessarTurmaVirtualj_id_2">
+<input name="form_acessarTurmaVirtualj_id_2" type="hidden" value="form_acessarTurmaVirtualj_id_2"/>
+<input name="idTurma" type="hidden" value="499005"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_2:turmaVirtualj_id_2" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['form_acessarTurmaVirtualj_id_2'],'form_acessarTurmaVirtualj_id_2:turmaVirtualj_id_2,form_acessarTurmaVirtualj_id_2:turmaVirtualj_id_2','');}return false">ECO0063 - TÓPICOS ESPECIAIS EM COMPUTAÇÃO I</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form></td>
+<td style="text-align: center">01</td>
+<td class="info" style="text-align: left">Sala 11 e Lab Prog. Comp. - Bloco I (Mucambinho)</td>
+<td class="info"><center>SEG 10:00-12:00<br/>QUA 10:00-12:00<br/>(31/03/2025 - 01/08/2025)
+											
+										</center></td>
+<td>
+<!--
+-->
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="formTurma1j_id_2" method="post" name="formTurma1j_id_2">
+<input name="formTurma1j_id_2" type="hidden" value="formTurma1j_id_2"/>
+<div id="formTurma1j_id_2:j_id_jsp_440181972_165j_id_2"><a href="/sigaa/ensino/turma/view_calendario.jsf?idTurma=499005"><img alt="Botão para abrir horário completo da turma em uma janela modal." src="/sigaa/img/view_calendario.png" title="Ver Horário Completo da Turma"/></a></div><script type="text/javascript">var lightBoxTarget = PrimeFaces.escapeClientId('formTurma1j_id_2:j_id_jsp_440181972_165j_id_2') + ' a';
+widget_formTurma1j_id_2_j_id_jsp_440181972_165j_id_2 = jQuery(lightBoxTarget).colorbox({transition:'elastic',speed:150,width:'700',height:'645',iframe:true,opacity:0.25,rel:'formTurma1j_id_2:j_id_jsp_440181972_165j_id_2'});</script><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form>
+</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_499005" style="display: none;"></td>
+</tr>
+<tr class="">
+<td class="descricao">
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_3" method="post" name="form_acessarTurmaVirtualj_id_3">
+<input name="form_acessarTurmaVirtualj_id_3" type="hidden" value="form_acessarTurmaVirtualj_id_3"/>
+<input name="idTurma" type="hidden" value="499125"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_3:turmaVirtualj_id_3" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['form_acessarTurmaVirtualj_id_3'],'form_acessarTurmaVirtualj_id_3:turmaVirtualj_id_3,form_acessarTurmaVirtualj_id_3:turmaVirtualj_id_3','');}return false">SBL0095 - VARIAVEIS COMPLEXAS</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form></td>
+<td style="text-align: center">01</td>
+<td class="info" style="text-align: left">Sala 04 - Bloco I (Mucambinho)</td>
+<td class="info"><center>SEG 15:30-17:30<br/>QUA 15:30-17:30<br/>(31/03/2025 - 01/08/2025)
+											
+										</center></td>
+<td>
+<!--
+-->
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="formTurma1j_id_3" method="post" name="formTurma1j_id_3">
+<input name="formTurma1j_id_3" type="hidden" value="formTurma1j_id_3"/>
+<div id="formTurma1j_id_3:j_id_jsp_440181972_165j_id_3"><a href="/sigaa/ensino/turma/view_calendario.jsf?idTurma=499125"><img alt="Botão para abrir horário completo da turma em uma janela modal." src="/sigaa/img/view_calendario.png" title="Ver Horário Completo da Turma"/></a></div><script type="text/javascript">var lightBoxTarget = PrimeFaces.escapeClientId('formTurma1j_id_3:j_id_jsp_440181972_165j_id_3') + ' a';
+widget_formTurma1j_id_3_j_id_jsp_440181972_165j_id_3 = jQuery(lightBoxTarget).colorbox({transition:'elastic',speed:150,width:'700',height:'645',iframe:true,opacity:0.25,rel:'formTurma1j_id_3:j_id_jsp_440181972_165j_id_3'});</script><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form>
+</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_499125" style="display: none;"></td>
+</tr>
+<tr class="odd">
+<td class="descricao">
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="form_acessarTurmaVirtualj_id_4" method="post" name="form_acessarTurmaVirtualj_id_4">
+<input name="form_acessarTurmaVirtualj_id_4" type="hidden" value="form_acessarTurmaVirtualj_id_4"/>
+<input name="idTurma" type="hidden" value="499141"/>
+<a href="#" id="form_acessarTurmaVirtualj_id_4:turmaVirtualj_id_4" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.forms['form_acessarTurmaVirtualj_id_4'],'form_acessarTurmaVirtualj_id_4:turmaVirtualj_id_4,form_acessarTurmaVirtualj_id_4:turmaVirtualj_id_4','');}return false">ECO0056 - TECNOLOGIAS WEB</a><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form></td>
+<td style="text-align: center">01</td>
+<td class="info" style="text-align: left">Sala 11 e Lab Sim Numéricas - Bloco I (Mucambinho)</td>
+<td class="info"><center>TER 08:00-10:00<br/>QUI 08:00-10:00<br/>(31/03/2025 - 01/08/2025)
+											
+										</center></td>
+<td>
+<!--
+-->
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="formTurma1j_id_4" method="post" name="formTurma1j_id_4">
+<input name="formTurma1j_id_4" type="hidden" value="formTurma1j_id_4"/>
+<div id="formTurma1j_id_4:j_id_jsp_440181972_165j_id_4"><a href="/sigaa/ensino/turma/view_calendario.jsf?idTurma=499141"><img alt="Botão para abrir horário completo da turma em uma janela modal." src="/sigaa/img/view_calendario.png" title="Ver Horário Completo da Turma"/></a></div><script type="text/javascript">var lightBoxTarget = PrimeFaces.escapeClientId('formTurma1j_id_4:j_id_jsp_440181972_165j_id_4') + ' a';
+widget_formTurma1j_id_4_j_id_jsp_440181972_165j_id_4 = jQuery(lightBoxTarget).colorbox({transition:'elastic',speed:150,width:'700',height:'645',iframe:true,opacity:0.25,rel:'formTurma1j_id_4:j_id_jsp_440181972_165j_id_4'});</script><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form>
+</td>
+</tr>
+<tr>
+<td colspan="5" id="linha_499141" style="display: none;"></td>
+</tr>
+</tbody>
+</table>
+<span class="mais" style="text-align: left;">
+</span>
+<span class="mais" style="text-align: left;">
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="formDiscenteAgendaTurma" method="post" name="formDiscenteAgendaTurma">
+<input name="formDiscenteAgendaTurma" type="hidden" value="formDiscenteAgendaTurma"/>
+<div id="formDiscenteAgendaTurma:j_id_jsp_440181972_169"><a href="/sigaa/ensino/turma/view_calendario_discente.jsf?idDiscente=492650">Ver Agenda de Turmas</a></div><script type="text/javascript">var lightBoxTarget = PrimeFaces.escapeClientId('formDiscenteAgendaTurma:j_id_jsp_440181972_169') + ' a';
+widget_formDiscenteAgendaTurma_j_id_jsp_440181972_169 = jQuery(lightBoxTarget).colorbox({transition:'elastic',speed:150,width:'700',height:'600',iframe:true,opacity:0.25,rel:'formDiscenteAgendaTurma:j_id_jsp_440181972_169'});</script><input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form>
+</span>
+<span class="mais">
+<a href="/sigaa/portais/discente/turmas.jsf">Ver turmas anteriores</a>
+</span>
+</div>
+<h2 class="sr-only" id="matricula-atividade-titulo">Matrículas em atividades</h2>
+<div aria-labelledby="matricula-atividade-titulo" class="simple-panel" id="turmas-portal" role="region">
+<h4 aria-hidden="true" aria-level="2">Matriculas em Atividades</h4>
+<p class="vazio">Nenhuma Atividade neste semestre</p>
+</div>
+<form action="/sigaa/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded" id="formAtividades" method="post" name="formAtividades">
+<input name="formAtividades" type="hidden" value="formAtividades"/>
+<h2 class="sr-only" id="minhas-atividades-titulo">Minhas Atividades</h2>
+<div aria-labelledby="minhas-atividades-titulo" class="simple-panel" id="avaliacao-portal" role="region">
+<h4 aria-hidden="true">Minhas atividades</h4>
+<table>
+<thead>
+<tr>
+<th style="width: 30px;"></th>
+<th style="width: 150px;">Data</th>
+<th>Atividade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><img alt="Atividade no mês atual" src="/sigaa/img/prova_mes.png" title="Atividade no mês atual"/></td>
+<td> 
+													30/07/2025
+													
+													
+														(9 dias)
+													
+												 </td>
+<td><small>  TÓPICOS ESPECIAIS EM COMPUTAÇÃO I<br/>
+<strong>Avaliação:</strong> Projeto Final  
+											</small></td>
+</tr>
+</tbody>
+</table>
+<a class="mais" href="javascript:alert('Solicite que o seu professor inclua as datas da avaliação na Turma Virtual. Assim, elas aparecem aqui e você se organiza em suas provas')">Minhas
+								avaliações não aparecem!? Clique aqui!</a>
+</div>
+<input id="javax.faces.ViewState" name="javax.faces.ViewState" type="hidden" value="j_id4"/>
+</form>
+<h2 class="sr-only" id="forum-curso-titulo">Fórum do curso</h2>
+<div aria-labelledby="forum-curso-titulo" class="simple-panel" id="forum-portal" role="region">
+<div class="descricaoOperacao">
+					Caro Aluno, o fórum de discussões relacionadas ao seu curso pode
+					ser acessado através da opção <strong> Outros &gt; Fórum de
+						Cursos. </strong>
+</div>
+</div>
+<div>
+<div class="clear"></div>
+</div>
+<style>
+#avaliacao-portal th, #avaliacao-portal td {
+	text-align: left;
+}
+</style>
+<script type="text/javascript">
+	PainelNoticias.init('/sigaa/portais/docente/viewNoticia.jsf');
+</script>
+</div></div></main>
+<br>
+<div style="width: 80%; text-align: center; margin: 10px auto;">
+<a href="/sigaa/verPortalDiscente.do">Portal do Discente</a>
+</div>
+<footer id="rodape" role="contentinfo">
+<p>
+				SIGAA |
+				Copyright © 2010-2025 
+			  - Superintendência de Tecnologia da Informação
+			  - UFC
+			  - <span itemprop="telephone">(85) 3366-9999</span>
+			  - si3asprd02.ufc.br
+			</p>
+</footer>
+</br></div>
+<div id="painel-mensagem-envio"> </div>
+<script type="text/javascript">
+	Relogio.init(90);
+</script>
+<div id="mensagem">
+<div class="x-window-header"></div>
+<div class="x-window-body"></div>
+</div>
+<div class="enabled" vw="">
+<div class="active" vw-access-button=""></div>
+<div vw-plugin-wrapper="">
+<div class="vw-plugin-top-wrapper"></div>
+</div>
+</div>
+<script charset="UTF-8" src="https://vlibras.gov.br/app/vlibras-plugin.j... (1 KB restante(s))

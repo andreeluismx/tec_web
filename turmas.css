@@ -1,101 +1,161 @@
-/* turma.css */
-
-/* Paleta */
 :root {
---azul: #1E3A8A;
+--azul-escuro: #1E3A8A;
+--azul-claro: #D2EDFF;
+--azul-intermedio: #B2E2FF;
 --verde: #11827e;
---cinza-claro: #f8fafc;
---branco: #ffffff;
---texto: #1e293b;
+--cinza-claro: #F9FAFB;
+--texto-dark: #f1f5f9;
+--fundo-dark: #0f172a;
+--cartao-dark: #1e293b;
+--cinza-borda: #e2e8f0;
+--sombra-leve: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Reset */
 body {
 margin: 0;
 padding: 0;
-font-family: 'Segoe UI', sans-serif;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 background-color: var(--cinza-claro);
-color: var(--texto);
+color: #333;
+transition: background 0.3s, color 0.3s;
 }
 
-/* Header */
-header {
-background-color: var(--azul);
+a {
+color: inherit;
+text-decoration: none;
+}
+
+.main-header {
+background-color: var(--azul-escuro);
 color: white;
-padding: 16px;
+padding: 24px;
 text-align: center;
+position: relative;
+box-shadow: var(--sombra-leve);
 }
 
-main {
-max-width: 1200px;
-margin: 40px auto;
-background-color: var(--branco);
-padding: 30px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* Títulos */
-h1, h2 {
-color: var(--azul);
-}
-
-/* Informações de turma */
-.turma-info {
-margin-bottom: 30px;
-}
-
-.turma-info p {
-font-size: 16px;
-margin: 8px 0;
-}
-
-/* Horários e Docentes */
-table {
-width: 100%;
-border-collapse: collapse;
-margin-top: 20px;
-}
-
-th, td {
-border: 1px solid #ddd;
-padding: 12px;
-text-align: left;
-}
-
-th {
-background-color: var(--azul);
-color: white;
-}
-
-tr:nth-child(even) {
-background-color: #f5f5f5;
-}
-
-/* Botões ou ações */
-button {
+.logout-button {
+position: absolute;
+top: 20px;
+right: 20px;
 background-color: var(--verde);
 color: white;
-border: none;
-padding: 10px 18px;
+padding: 8px 14px;
 border-radius: 6px;
-cursor: pointer;
 font-weight: bold;
-margin-top: 20px;
-transition: background 0.3s ease;
 }
 
-button:hover {
-background-color: #0e6c61;
+.main-nav {
+background-color: var(--azul-claro);
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 12px 0;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-main {
-padding: 20px;
+.main-nav a {
+color: var(--azul-escuro);
+font-weight: 500;
 }
 
-table {
+.main-nav a:hover {
+text-decoration: underline;
+}
+
+#turma {
+width: 92%;
+max-width: 1200px;
+margin: 30px auto 50px;
+}
+
+#turma h2 {
+color: var(--azul-escuro);
+font-size: 24px;
+margin: 0 0 20px 10px;
+}
+
+#loading-message {
+text-align: center;
+font-size: 16px;
+color: #555;
+margin: 10px 0 5px;
+font-style: italic;
+}
+
+.student-cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+gap: 20px;
+margin-top: 10px;
+}
+
+.student-card {
+background-color: white;
+border: 1px solid var(--cinza-borda);
+border-radius: 10px;
+padding: 18px;
+text-align: center;
+box-shadow: var(--sombra-leve);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.student-card img {
+width: 72px;
+height: 72px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 10px;
+border: 2px solid var(--azul-intermedio);
+}
+
+.student-card h3 {
+font-size: 18px;
+color: var(--azul-escuro);
+margin: 6px 0;
+}
+
+.student-card p {
 font-size: 14px;
+color: #555;
+margin: 2px 0;
 }
+
+/* 🌙 Modo Escuro */
+body.dark {
+background-color: var(--fundo-dark);
+color: var(--texto-dark);
+}
+
+body.dark .main-header,
+body.dark .main-nav {
+background-color: var(--cartao-dark);
+color: var(--texto-dark);
+}
+
+body.dark .main-nav a {
+color: var(--azul-claro);
+}
+
+body.dark #turma h2,
+body.dark .student-card h3 {
+color: var(--azul-claro);
+}
+
+body.dark .student-card {
+background-color: var(--cartao-dark);
+border-color: #334155;
+color: var(--texto-dark);
+}
+
+body.dark .student-card p {
+color: var(--texto-dark);
+}
+
+body.dark #loading-message {
+color: var(--texto-dark);
 }

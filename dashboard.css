@@ -1,0 +1,243 @@
+/* =========================
+   Paleta de Cores e Variáveis
+   ========================= */
+:root {
+  --azul-escuro: #1E3A8A;
+  --azul-claro: #D2EDFF;
+  --azul-intermedio: #B2E2FF;
+  --verde: #11827e;
+  --cinza-claro: #F9FAFB;
+  --fundo-dark: #0f172a;
+  --texto-dark: #f1f5f9;
+  --cartao-dark: #1e293b;
+  --sombra-suave: rgba(0, 0, 0, 0.05);
+  --sombra-intensa: rgba(0, 0, 0, 0.1);
+  --borda-suave: #ddd;
+}
+
+/* =========================
+   Estilos Gerais
+   ========================= */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cinza-claro);
+  color: #011827;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  color: var(--azul-escuro);
+  margin-top: 0;
+}
+
+/* =========================
+   Cabeçalho
+   ========================= */
+header {
+  background-color: white;
+  color: var(--azul-escuro);
+  padding: 20px 40px;
+  text-align: center;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px var(--sombra-suave);
+  border-bottom: 2px solid var(--azul-intermedio);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* =========================
+   Navegação Horizontal
+   ========================= */
+nav {
+  background-color: var(--azul-claro);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 4px var(--sombra-suave);
+}
+
+nav a {
+  color: var(--azul-escuro);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: var(--azul-intermedio);
+}
+
+/* =========================
+   Seções principais
+   ========================= */
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+  border-bottom: 3px solid var(--azul-escuro);
+  padding-bottom: 8px;
+}
+
+/* =========================
+   Cartões principais
+   ========================= */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  flex: 1;
+  min-width: 240px;
+  background: white;
+  border: 1px solid var(--borda-suave);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--sombra-suave);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px var(--sombra-intensa);
+}
+
+.card h3 {
+  margin: 12px 0 8px;
+  font-size: 20px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* =========================
+   Tabela de Disciplinas
+   ========================= */
+.discipline-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px var(--sombra-suave);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.discipline-table th, .discipline-table td {
+  border: 1px solid var(--borda-suave);
+  padding: 14px;
+  text-align: left;
+}
+
+.discipline-table th {
+  background-color: var(--azul-intermedio);
+  color: #011827;
+  font-weight: bold;
+}
+
+.status {
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 14px;
+}
+
+.status.ativo {
+  background-color: var(--verde);
+  color: white;
+}
+
+.status.inativo {
+  background-color: #ccc;
+  color: #333;
+}
+
+/* =========================
+   Eventos
+   ========================= */
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-list li {
+  background: white;
+  padding: 16px;
+  border: 1px solid var(--borda-suave);
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: background 0.3s;
+  font-size: 15px;
+}
+
+.event-list li:hover {
+  background-color: var(--azul-claro);
+}
+
+/* =========================
+   Rodapé
+   ========================= */
+footer {
+  text-align: center;
+  padding: 24px;
+  background: var(--azul-intermedio);
+  color: #011827;
+  font-size: 14px;
+}
+
+/* =========================
+   Modo Escuro (opcional)
+   ========================= */
+body.dark-mode {
+  background-color: var(--fundo-dark);
+  color: var(--texto-dark);
+}
+
+body.dark-mode header,
+body.dark-mode nav,
+body.dark-mode footer {
+  background-color: var(--cartao-dark);
+  color: var(--texto-dark);
+}
+
+body.dark-mode .card,
+body.dark-mode .event-list li,
+body.dark-mode .discipline-table th,
+body.dark-mode .discipline-table td {
+  background-color: var(--cartao-dark);
+  color: var(--texto-dark);
+  border-color: #334155;
+}
+
+body.dark-mode nav a {
+  color: var(--azul-claro);
+}
+
+body.dark-mode nav a:hover {
+  background-color: #334155;
+}
